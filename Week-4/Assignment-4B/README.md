@@ -1,371 +1,371 @@
 ## EIP-4 Week-4
 
-## Training Accuracy ~ 91.63%
+## Training Accuracy ~ 92.54%
 
-## Test Accuracy 	   ~ 88.48%
+## Test Accuracy 	   ~ 90.47%
 
-## Baseline Model Logs
-
+## Model Summary
 ```
-Epoch 1/50
-390/390 [==============================] - 77s 196ms/step - loss: 2.8290 - acc: 0.3282 - val_loss: 2.6819 - val_acc: 0.2638
-
-Epoch 00001: val_acc improved from -inf to 0.26380, saving model to /content/best_weights.hdf5
-Epoch 2/50
-390/390 [==============================] - 68s 176ms/step - loss: 1.9195 - acc: 0.4461 - val_loss: 1.9405 - val_acc: 0.4438
-
-Epoch 00002: val_acc improved from 0.26380 to 0.44380, saving model to /content/best_weights.hdf5
-Epoch 3/50
-390/390 [==============================] - 68s 175ms/step - loss: 1.6883 - acc: 0.5063 - val_loss: 1.6572 - val_acc: 0.5069
-
-Epoch 00003: val_acc improved from 0.44380 to 0.50690, saving model to /content/best_weights.hdf5
-Epoch 4/50
-390/390 [==============================] - 68s 175ms/step - loss: 1.5490 - acc: 0.5579 - val_loss: 1.7222 - val_acc: 0.5092
-
-Epoch 00004: val_acc improved from 0.50690 to 0.50920, saving model to /content/best_weights.hdf5
-Epoch 5/50
-390/390 [==============================] - 68s 175ms/step - loss: 1.4480 - acc: 0.5969 - val_loss: 1.9544 - val_acc: 0.4795
-
-Epoch 00005: val_acc did not improve from 0.50920
-Epoch 6/50
-390/390 [==============================] - 68s 175ms/step - loss: 1.3725 - acc: 0.6266 - val_loss: 1.7343 - val_acc: 0.5486
-
-Epoch 00006: val_acc improved from 0.50920 to 0.54860, saving model to /content/best_weights.hdf5
-
-Epoch 00006: ReduceLROnPlateau reducing learning rate to 0.0009486833062967954.
-Epoch 7/50
-390/390 [==============================] - 68s 175ms/step - loss: 1.1171 - acc: 0.7023 - val_loss: 1.0647 - val_acc: 0.7173
-
-Epoch 00007: val_acc improved from 0.54860 to 0.71730, saving model to /content/best_weights.hdf5
-Epoch 8/50
-390/390 [==============================] - 68s 175ms/step - loss: 1.0405 - acc: 0.7235 - val_loss: 1.0120 - val_acc: 0.7265
-
-Epoch 00008: val_acc improved from 0.71730 to 0.72650, saving model to /content/best_weights.hdf5
-Epoch 9/50
-390/390 [==============================] - 68s 175ms/step - loss: 0.9971 - acc: 0.7363 - val_loss: 0.9875 - val_acc: 0.7446
-
-Epoch 00009: val_acc improved from 0.72650 to 0.74460, saving model to /content/best_weights.hdf5
-Epoch 10/50
-390/390 [==============================] - 69s 177ms/step - loss: 0.9573 - acc: 0.7470 - val_loss: 1.0275 - val_acc: 0.7413
-
-Epoch 00010: val_acc did not improve from 0.74460
-Epoch 11/50
-390/390 [==============================] - 69s 176ms/step - loss: 0.9232 - acc: 0.7600 - val_loss: 1.0137 - val_acc: 0.7368
-
-Epoch 00011: val_acc did not improve from 0.74460
-Epoch 12/50
-390/390 [==============================] - 68s 175ms/step - loss: 0.9007 - acc: 0.7667 - val_loss: 0.9470 - val_acc: 0.7591
-
-Epoch 00012: val_acc improved from 0.74460 to 0.75910, saving model to /content/best_weights.hdf5
-Epoch 13/50
-390/390 [==============================] - 68s 175ms/step - loss: 0.8704 - acc: 0.7780 - val_loss: 1.0512 - val_acc: 0.7325
-
-Epoch 00013: val_acc did not improve from 0.75910
-Epoch 14/50
-390/390 [==============================] - 68s 175ms/step - loss: 0.8537 - acc: 0.7805 - val_loss: 1.0273 - val_acc: 0.7403
-
-Epoch 00014: val_acc did not improve from 0.75910
-Epoch 15/50
-390/390 [==============================] - 68s 175ms/step - loss: 0.8306 - acc: 0.7898 - val_loss: 0.7868 - val_acc: 0.8081
-
-Epoch 00015: val_acc improved from 0.75910 to 0.80810, saving model to /content/best_weights.hdf5
-Epoch 16/50
-390/390 [==============================] - 68s 175ms/step - loss: 0.8110 - acc: 0.7952 - val_loss: 0.8606 - val_acc: 0.7894
-
-Epoch 00016: val_acc did not improve from 0.80810
-Epoch 17/50
-390/390 [==============================] - 68s 175ms/step - loss: 0.7956 - acc: 0.8004 - val_loss: 0.8873 - val_acc: 0.7796
-
-Epoch 00017: val_acc did not improve from 0.80810
-Epoch 18/50
-390/390 [==============================] - 68s 175ms/step - loss: 0.7776 - acc: 0.8056 - val_loss: 0.8660 - val_acc: 0.7868
-
-Epoch 00018: val_acc did not improve from 0.80810
-
-Epoch 00018: ReduceLROnPlateau reducing learning rate to 0.0003000000007813074.
-Epoch 19/50
-390/390 [==============================] - 69s 176ms/step - loss: 0.6827 - acc: 0.8363 - val_loss: 0.6911 - val_acc: 0.8418
-
-Epoch 00019: val_acc improved from 0.80810 to 0.84180, saving model to /content/best_weights.hdf5
-Epoch 20/50
-390/390 [==============================] - 69s 176ms/step - loss: 0.6392 - acc: 0.8481 - val_loss: 0.6499 - val_acc: 0.8500
-
-Epoch 00020: val_acc improved from 0.84180 to 0.85000, saving model to /content/best_weights.hdf5
-Epoch 21/50
-390/390 [==============================] - 69s 176ms/step - loss: 0.6220 - acc: 0.8528 - val_loss: 0.6148 - val_acc: 0.8597
-
-Epoch 00021: val_acc improved from 0.85000 to 0.85970, saving model to /content/best_weights.hdf5
-Epoch 22/50
-390/390 [==============================] - 68s 175ms/step - loss: 0.6045 - acc: 0.8571 - val_loss: 0.6358 - val_acc: 0.8557
-
-Epoch 00022: val_acc did not improve from 0.85970
-Epoch 23/50
-390/390 [==============================] - 68s 176ms/step - loss: 0.5947 - acc: 0.8599 - val_loss: 0.5922 - val_acc: 0.8647
-
-Epoch 00023: val_acc improved from 0.85970 to 0.86470, saving model to /content/best_weights.hdf5
-Epoch 24/50
-390/390 [==============================] - 68s 176ms/step - loss: 0.5794 - acc: 0.8639 - val_loss: 0.6311 - val_acc: 0.8536
-
-Epoch 00024: val_acc did not improve from 0.86470
-Epoch 25/50
-390/390 [==============================] - 69s 176ms/step - loss: 0.5719 - acc: 0.8650 - val_loss: 0.6538 - val_acc: 0.8497
-
-Epoch 00025: val_acc did not improve from 0.86470
-Epoch 26/50
-390/390 [==============================] - 68s 176ms/step - loss: 0.5614 - acc: 0.8677 - val_loss: 0.5801 - val_acc: 0.8707
-
-Epoch 00026: val_acc improved from 0.86470 to 0.87070, saving model to /content/best_weights.hdf5
-Epoch 27/50
-390/390 [==============================] - 69s 176ms/step - loss: 0.5490 - acc: 0.8724 - val_loss: 0.6875 - val_acc: 0.8375
-
-Epoch 00027: val_acc did not improve from 0.87070
-Epoch 28/50
-390/390 [==============================] - 69s 176ms/step - loss: 0.5424 - acc: 0.8746 - val_loss: 0.5845 - val_acc: 0.8625
-
-Epoch 00028: val_acc did not improve from 0.87070
-Epoch 29/50
-390/390 [==============================] - 68s 176ms/step - loss: 0.5341 - acc: 0.8739 - val_loss: 0.6362 - val_acc: 0.8547
-
-Epoch 00029: val_acc did not improve from 0.87070
-
-Epoch 00029: ReduceLROnPlateau reducing learning rate to 0.0001.
-Epoch 30/50
-390/390 [==============================] - 68s 175ms/step - loss: 0.4889 - acc: 0.8907 - val_loss: 0.5519 - val_acc: 0.8762
-
-Epoch 00030: val_acc improved from 0.87070 to 0.87620, saving model to /content/best_weights.hdf5
-Epoch 31/50
-390/390 [==============================] - 68s 175ms/step - loss: 0.4810 - acc: 0.8926 - val_loss: 0.5352 - val_acc: 0.8811
-
-Epoch 00031: val_acc improved from 0.87620 to 0.88110, saving model to /content/best_weights.hdf5
-Epoch 32/50
-390/390 [==============================] - 68s 175ms/step - loss: 0.4708 - acc: 0.8965 - val_loss: 0.5538 - val_acc: 0.8730
-
-Epoch 00032: val_acc did not improve from 0.88110
-Epoch 33/50
-390/390 [==============================] - 68s 175ms/step - loss: 0.4645 - acc: 0.8979 - val_loss: 0.5375 - val_acc: 0.8819
-
-Epoch 00033: val_acc improved from 0.88110 to 0.88190, saving model to /content/best_weights.hdf5
-Epoch 34/50
-390/390 [==============================] - 68s 175ms/step - loss: 0.4548 - acc: 0.9007 - val_loss: 0.5453 - val_acc: 0.8776
-
-Epoch 00034: val_acc did not improve from 0.88190
-Epoch 35/50
-390/390 [==============================] - 68s 175ms/step - loss: 0.4458 - acc: 0.9042 - val_loss: 0.5498 - val_acc: 0.8788
-
-Epoch 00035: val_acc did not improve from 0.88190
-Epoch 36/50
-390/390 [==============================] - 68s 175ms/step - loss: 0.4468 - acc: 0.9014 - val_loss: 0.5444 - val_acc: 0.8802
-
-Epoch 00036: val_acc did not improve from 0.88190
-Epoch 37/50
-390/390 [==============================] - 68s 175ms/step - loss: 0.4371 - acc: 0.9044 - val_loss: 0.5522 - val_acc: 0.8756
-
-Epoch 00037: val_acc did not improve from 0.88190
-Epoch 38/50
-390/390 [==============================] - 68s 175ms/step - loss: 0.4398 - acc: 0.9044 - val_loss: 0.5452 - val_acc: 0.8793
-
-Epoch 00038: val_acc did not improve from 0.88190
-Epoch 39/50
-390/390 [==============================] - 68s 175ms/step - loss: 0.4318 - acc: 0.9058 - val_loss: 0.5305 - val_acc: 0.8812
-
-Epoch 00039: val_acc did not improve from 0.88190
-Epoch 40/50
-390/390 [==============================] - 69s 178ms/step - loss: 0.4299 - acc: 0.9059 - val_loss: 0.5279 - val_acc: 0.8842
-
-Epoch 00040: val_acc improved from 0.88190 to 0.88420, saving model to /content/best_weights.hdf5
-Epoch 41/50
-390/390 [==============================] - 68s 175ms/step - loss: 0.4198 - acc: 0.9109 - val_loss: 0.5263 - val_acc: 0.8848
-
-Epoch 00041: val_acc improved from 0.88420 to 0.88480, saving model to /content/best_weights.hdf5
-Epoch 42/50
-390/390 [==============================] - 69s 177ms/step - loss: 0.4231 - acc: 0.9084 - val_loss: 0.5270 - val_acc: 0.8844
-
-Epoch 00042: val_acc did not improve from 0.88480
-Epoch 43/50
-390/390 [==============================] - 68s 175ms/step - loss: 0.4130 - acc: 0.9115 - val_loss: 0.5305 - val_acc: 0.8844
-
-Epoch 00043: val_acc did not improve from 0.88480
-Epoch 44/50
-390/390 [==============================] - 68s 175ms/step - loss: 0.4126 - acc: 0.9127 - val_loss: 0.5467 - val_acc: 0.8814
-
-Epoch 00044: val_acc did not improve from 0.88480
-Epoch 45/50
-390/390 [==============================] - 69s 176ms/step - loss: 0.4072 - acc: 0.9133 - val_loss: 0.5547 - val_acc: 0.8784
-
-Epoch 00045: val_acc did not improve from 0.88480
-Epoch 46/50
-390/390 [==============================] - 68s 175ms/step - loss: 0.4052 - acc: 0.9143 - val_loss: 0.5309 - val_acc: 0.8837
-
-Epoch 00046: val_acc did not improve from 0.88480
-Epoch 47/50
-390/390 [==============================] - 68s 175ms/step - loss: 0.3982 - acc: 0.9164 - val_loss: 0.5339 - val_acc: 0.8848
-
-Epoch 00047: val_acc did not improve from 0.88480
-Epoch 48/50
-390/390 [==============================] - 68s 176ms/step - loss: 0.3964 - acc: 0.9166 - val_loss: 0.5454 - val_acc: 0.8804
-
-Epoch 00048: val_acc did not improve from 0.88480
-Epoch 49/50
-390/390 [==============================] - 68s 175ms/step - loss: 0.3968 - acc: 0.9163 - val_loss: 0.5390 - val_acc: 0.8841
-
-Epoch 00049: val_acc did not improve from 0.88480
-Epoch 50/50
-390/390 [==============================] - 68s 175ms/step - loss: 0.3934 - acc: 0.9162 - val_loss: 0.5402 - val_acc: 0.8843
-
-Epoch 00050: val_acc did not improve from 0.88480
-Model took 3445.20 seconds to train
-```
-
-
-## Summary
-
-```
-Model: "model_1"
+Model: "model_5"
 __________________________________________________________________________________________________
 Layer (type)                    Output Shape         Param #     Connected to                     
 ==================================================================================================
-input_1 (InputLayer)            (None, 32, 32, 3)    0                                            
+input_6 (InputLayer)            (None, 32, 32, 3)    0                                            
 __________________________________________________________________________________________________
-conv2d_1 (Conv2D)               (None, 16, 16, 64)   9472        input_1[0][0]                    
+conv2d_99 (Conv2D)              (None, 32, 32, 64)   1792        input_6[0][0]                    
 __________________________________________________________________________________________________
-batch_normalization_1 (BatchNor (None, 16, 16, 64)   256         conv2d_1[0][0]                   
+batch_normalization_84 (BatchNo (None, 32, 32, 64)   256         conv2d_99[0][0]                  
 __________________________________________________________________________________________________
-activation_1 (Activation)       (None, 16, 16, 64)   0           batch_normalization_1[0][0]      
+activation_83 (Activation)      (None, 32, 32, 64)   0           batch_normalization_84[0][0]     
 __________________________________________________________________________________________________
-conv2d_2 (Conv2D)               (None, 16, 16, 64)   36928       activation_1[0][0]               
+conv2d_100 (Conv2D)             (None, 32, 32, 64)   36928       activation_83[0][0]              
 __________________________________________________________________________________________________
-batch_normalization_2 (BatchNor (None, 16, 16, 64)   256         conv2d_2[0][0]                   
+batch_normalization_85 (BatchNo (None, 32, 32, 64)   256         conv2d_100[0][0]                 
 __________________________________________________________________________________________________
-activation_2 (Activation)       (None, 16, 16, 64)   0           batch_normalization_2[0][0]      
+activation_84 (Activation)      (None, 32, 32, 64)   0           batch_normalization_85[0][0]     
 __________________________________________________________________________________________________
-conv2d_3 (Conv2D)               (None, 16, 16, 64)   36928       activation_2[0][0]               
+conv2d_101 (Conv2D)             (None, 32, 32, 64)   36928       activation_84[0][0]              
 __________________________________________________________________________________________________
-batch_normalization_3 (BatchNor (None, 16, 16, 64)   256         conv2d_3[0][0]                   
+batch_normalization_86 (BatchNo (None, 32, 32, 64)   256         conv2d_101[0][0]                 
 __________________________________________________________________________________________________
-add_1 (Add)                     (None, 16, 16, 64)   0           activation_1[0][0]               
-                                                                 batch_normalization_3[0][0]      
+add_40 (Add)                    (None, 32, 32, 64)   0           activation_83[0][0]              
+                                                                 batch_normalization_86[0][0]     
 __________________________________________________________________________________________________
-activation_3 (Activation)       (None, 16, 16, 64)   0           add_1[0][0]                      
+activation_85 (Activation)      (None, 32, 32, 64)   0           add_40[0][0]                     
 __________________________________________________________________________________________________
-conv2d_4 (Conv2D)               (None, 16, 16, 64)   36928       activation_3[0][0]               
+conv2d_102 (Conv2D)             (None, 32, 32, 64)   36928       activation_85[0][0]              
 __________________________________________________________________________________________________
-batch_normalization_4 (BatchNor (None, 16, 16, 64)   256         conv2d_4[0][0]                   
+batch_normalization_87 (BatchNo (None, 32, 32, 64)   256         conv2d_102[0][0]                 
 __________________________________________________________________________________________________
-activation_4 (Activation)       (None, 16, 16, 64)   0           batch_normalization_4[0][0]      
+activation_86 (Activation)      (None, 32, 32, 64)   0           batch_normalization_87[0][0]     
 __________________________________________________________________________________________________
-conv2d_5 (Conv2D)               (None, 16, 16, 64)   36928       activation_4[0][0]               
+conv2d_103 (Conv2D)             (None, 32, 32, 64)   36928       activation_86[0][0]              
 __________________________________________________________________________________________________
-batch_normalization_5 (BatchNor (None, 16, 16, 64)   256         conv2d_5[0][0]                   
+batch_normalization_88 (BatchNo (None, 32, 32, 64)   256         conv2d_103[0][0]                 
 __________________________________________________________________________________________________
-add_2 (Add)                     (None, 16, 16, 64)   0           activation_3[0][0]               
-                                                                 batch_normalization_5[0][0]      
+add_41 (Add)                    (None, 32, 32, 64)   0           activation_85[0][0]              
+                                                                 batch_normalization_88[0][0]     
 __________________________________________________________________________________________________
-activation_5 (Activation)       (None, 16, 16, 64)   0           add_2[0][0]                      
+activation_87 (Activation)      (None, 32, 32, 64)   0           add_41[0][0]                     
 __________________________________________________________________________________________________
-conv2d_6 (Conv2D)               (None, 8, 8, 128)    73856       activation_5[0][0]               
+conv2d_104 (Conv2D)             (None, 16, 16, 128)  73856       activation_87[0][0]              
 __________________________________________________________________________________________________
-batch_normalization_6 (BatchNor (None, 8, 8, 128)    512         conv2d_6[0][0]                   
+batch_normalization_89 (BatchNo (None, 16, 16, 128)  512         conv2d_104[0][0]                 
 __________________________________________________________________________________________________
-activation_6 (Activation)       (None, 8, 8, 128)    0           batch_normalization_6[0][0]      
+activation_88 (Activation)      (None, 16, 16, 128)  0           batch_normalization_89[0][0]     
 __________________________________________________________________________________________________
-conv2d_7 (Conv2D)               (None, 8, 8, 128)    147584      activation_6[0][0]               
+conv2d_105 (Conv2D)             (None, 16, 16, 128)  147584      activation_88[0][0]              
 __________________________________________________________________________________________________
-conv2d_8 (Conv2D)               (None, 8, 8, 128)    8320        activation_5[0][0]               
+conv2d_106 (Conv2D)             (None, 16, 16, 128)  8320        activation_87[0][0]              
 __________________________________________________________________________________________________
-batch_normalization_7 (BatchNor (None, 8, 8, 128)    512         conv2d_7[0][0]                   
+batch_normalization_90 (BatchNo (None, 16, 16, 128)  512         conv2d_105[0][0]                 
 __________________________________________________________________________________________________
-add_3 (Add)                     (None, 8, 8, 128)    0           conv2d_8[0][0]                   
-                                                                 batch_normalization_7[0][0]      
+add_42 (Add)                    (None, 16, 16, 128)  0           conv2d_106[0][0]                 
+                                                                 batch_normalization_90[0][0]     
 __________________________________________________________________________________________________
-activation_7 (Activation)       (None, 8, 8, 128)    0           add_3[0][0]                      
+activation_89 (Activation)      (None, 16, 16, 128)  0           add_42[0][0]                     
 __________________________________________________________________________________________________
-conv2d_9 (Conv2D)               (None, 8, 8, 128)    147584      activation_7[0][0]               
+conv2d_107 (Conv2D)             (None, 16, 16, 128)  147584      activation_89[0][0]              
 __________________________________________________________________________________________________
-batch_normalization_8 (BatchNor (None, 8, 8, 128)    512         conv2d_9[0][0]                   
+batch_normalization_91 (BatchNo (None, 16, 16, 128)  512         conv2d_107[0][0]                 
 __________________________________________________________________________________________________
-activation_8 (Activation)       (None, 8, 8, 128)    0           batch_normalization_8[0][0]      
+activation_90 (Activation)      (None, 16, 16, 128)  0           batch_normalization_91[0][0]     
 __________________________________________________________________________________________________
-conv2d_10 (Conv2D)              (None, 8, 8, 128)    147584      activation_8[0][0]               
+conv2d_108 (Conv2D)             (None, 16, 16, 128)  147584      activation_90[0][0]              
 __________________________________________________________________________________________________
-batch_normalization_9 (BatchNor (None, 8, 8, 128)    512         conv2d_10[0][0]                  
+batch_normalization_92 (BatchNo (None, 16, 16, 128)  512         conv2d_108[0][0]                 
 __________________________________________________________________________________________________
-add_4 (Add)                     (None, 8, 8, 128)    0           activation_7[0][0]               
-                                                                 batch_normalization_9[0][0]      
+add_43 (Add)                    (None, 16, 16, 128)  0           activation_89[0][0]              
+                                                                 batch_normalization_92[0][0]     
 __________________________________________________________________________________________________
-activation_9 (Activation)       (None, 8, 8, 128)    0           add_4[0][0]                      
+activation_91 (Activation)      (None, 16, 16, 128)  0           add_43[0][0]                     
 __________________________________________________________________________________________________
-conv2d_11 (Conv2D)              (None, 4, 4, 256)    295168      activation_9[0][0]               
+conv2d_109 (Conv2D)             (None, 8, 8, 256)    295168      activation_91[0][0]              
 __________________________________________________________________________________________________
-batch_normalization_10 (BatchNo (None, 4, 4, 256)    1024        conv2d_11[0][0]                  
+batch_normalization_93 (BatchNo (None, 8, 8, 256)    1024        conv2d_109[0][0]                 
 __________________________________________________________________________________________________
-activation_10 (Activation)      (None, 4, 4, 256)    0           batch_normalization_10[0][0]     
+activation_92 (Activation)      (None, 8, 8, 256)    0           batch_normalization_93[0][0]     
 __________________________________________________________________________________________________
-conv2d_12 (Conv2D)              (None, 4, 4, 256)    590080      activation_10[0][0]              
+conv2d_110 (Conv2D)             (None, 8, 8, 256)    590080      activation_92[0][0]              
 __________________________________________________________________________________________________
-conv2d_13 (Conv2D)              (None, 4, 4, 256)    33024       activation_9[0][0]               
+conv2d_111 (Conv2D)             (None, 8, 8, 256)    33024       activation_91[0][0]              
 __________________________________________________________________________________________________
-batch_normalization_11 (BatchNo (None, 4, 4, 256)    1024        conv2d_12[0][0]                  
+batch_normalization_94 (BatchNo (None, 8, 8, 256)    1024        conv2d_110[0][0]                 
 __________________________________________________________________________________________________
-add_5 (Add)                     (None, 4, 4, 256)    0           conv2d_13[0][0]                  
-                                                                 batch_normalization_11[0][0]     
+add_44 (Add)                    (None, 8, 8, 256)    0           conv2d_111[0][0]                 
+                                                                 batch_normalization_94[0][0]     
 __________________________________________________________________________________________________
-activation_11 (Activation)      (None, 4, 4, 256)    0           add_5[0][0]                      
+activation_93 (Activation)      (None, 8, 8, 256)    0           add_44[0][0]                     
 __________________________________________________________________________________________________
-conv2d_14 (Conv2D)              (None, 4, 4, 256)    590080      activation_11[0][0]              
+conv2d_112 (Conv2D)             (None, 8, 8, 256)    590080      activation_93[0][0]              
 __________________________________________________________________________________________________
-batch_normalization_12 (BatchNo (None, 4, 4, 256)    1024        conv2d_14[0][0]                  
+batch_normalization_95 (BatchNo (None, 8, 8, 256)    1024        conv2d_112[0][0]                 
 __________________________________________________________________________________________________
-activation_12 (Activation)      (None, 4, 4, 256)    0           batch_normalization_12[0][0]     
+activation_94 (Activation)      (None, 8, 8, 256)    0           batch_normalization_95[0][0]     
 __________________________________________________________________________________________________
-conv2d_15 (Conv2D)              (None, 4, 4, 256)    590080      activation_12[0][0]              
+conv2d_113 (Conv2D)             (None, 8, 8, 256)    590080      activation_94[0][0]              
 __________________________________________________________________________________________________
-batch_normalization_13 (BatchNo (None, 4, 4, 256)    1024        conv2d_15[0][0]                  
+batch_normalization_96 (BatchNo (None, 8, 8, 256)    1024        conv2d_113[0][0]                 
 __________________________________________________________________________________________________
-add_6 (Add)                     (None, 4, 4, 256)    0           activation_11[0][0]              
-                                                                 batch_normalization_13[0][0]     
+add_45 (Add)                    (None, 8, 8, 256)    0           activation_93[0][0]              
+                                                                 batch_normalization_96[0][0]     
 __________________________________________________________________________________________________
-activation_13 (Activation)      (None, 4, 4, 256)    0           add_6[0][0]                      
+activation_95 (Activation)      (None, 8, 8, 256)    0           add_45[0][0]                     
 __________________________________________________________________________________________________
-conv2d_16 (Conv2D)              (None, 2, 2, 512)    1180160     activation_13[0][0]              
+conv2d_116 (Conv2D)             (None, 8, 8, 512)    131584      activation_95[0][0]              
 __________________________________________________________________________________________________
-batch_normalization_14 (BatchNo (None, 2, 2, 512)    2048        conv2d_16[0][0]                  
+conv2d_117 (Conv2D)             (None, 8, 8, 512)    2359808     conv2d_116[0][0]                 
 __________________________________________________________________________________________________
-activation_14 (Activation)      (None, 2, 2, 512)    0           batch_normalization_14[0][0]     
+batch_normalization_99 (BatchNo (None, 8, 8, 512)    2048        conv2d_117[0][0]                 
 __________________________________________________________________________________________________
-conv2d_17 (Conv2D)              (None, 2, 2, 512)    2359808     activation_14[0][0]              
+activation_97 (Activation)      (None, 8, 8, 512)    0           batch_normalization_99[0][0]     
 __________________________________________________________________________________________________
-conv2d_18 (Conv2D)              (None, 2, 2, 512)    131584      activation_13[0][0]              
+conv2d_118 (Conv2D)             (None, 8, 8, 512)    2359808     activation_97[0][0]              
 __________________________________________________________________________________________________
-batch_normalization_15 (BatchNo (None, 2, 2, 512)    2048        conv2d_17[0][0]                  
+conv2d_119 (Conv2D)             (None, 8, 8, 512)    262656      conv2d_116[0][0]                 
 __________________________________________________________________________________________________
-add_7 (Add)                     (None, 2, 2, 512)    0           conv2d_18[0][0]                  
-                                                                 batch_normalization_15[0][0]     
+batch_normalization_100 (BatchN (None, 8, 8, 512)    2048        conv2d_118[0][0]                 
 __________________________________________________________________________________________________
-activation_15 (Activation)      (None, 2, 2, 512)    0           add_7[0][0]                      
+add_46 (Add)                    (None, 8, 8, 512)    0           conv2d_119[0][0]                 
+                                                                 batch_normalization_100[0][0]    
 __________________________________________________________________________________________________
-conv2d_19 (Conv2D)              (None, 2, 2, 512)    2359808     activation_15[0][0]              
+activation_98 (Activation)      (None, 8, 8, 512)    0           add_46[0][0]                     
 __________________________________________________________________________________________________
-batch_normalization_16 (BatchNo (None, 2, 2, 512)    2048        conv2d_19[0][0]                  
+conv2d_120 (Conv2D)             (None, 8, 8, 512)    2359808     activation_98[0][0]              
 __________________________________________________________________________________________________
-activation_16 (Activation)      (None, 2, 2, 512)    0           batch_normalization_16[0][0]     
+batch_normalization_101 (BatchN (None, 8, 8, 512)    2048        conv2d_120[0][0]                 
 __________________________________________________________________________________________________
-conv2d_20 (Conv2D)              (None, 2, 2, 512)    2359808     activation_16[0][0]              
+activation_99 (Activation)      (None, 8, 8, 512)    0           batch_normalization_101[0][0]    
 __________________________________________________________________________________________________
-batch_normalization_17 (BatchNo (None, 2, 2, 512)    2048        conv2d_20[0][0]                  
+conv2d_121 (Conv2D)             (None, 8, 8, 512)    2359808     activation_99[0][0]              
 __________________________________________________________________________________________________
-add_8 (Add)                     (None, 2, 2, 512)    0           activation_15[0][0]              
-                                                                 batch_normalization_17[0][0]     
+batch_normalization_102 (BatchN (None, 8, 8, 512)    2048        conv2d_121[0][0]                 
 __________________________________________________________________________________________________
-activation_17 (Activation)      (None, 2, 2, 512)    0           add_8[0][0]                      
+add_47 (Add)                    (None, 8, 8, 512)    0           activation_98[0][0]              
+                                                                 batch_normalization_102[0][0]    
 __________________________________________________________________________________________________
-average_pooling2d_1 (AveragePoo (None, 1, 1, 512)    0           activation_17[0][0]              
+activation_100 (Activation)     (None, 8, 8, 512)    0           add_47[0][0]                     
 __________________________________________________________________________________________________
-flatten_1 (Flatten)             (None, 512)          0           average_pooling2d_1[0][0]        
+average_pooling2d_5 (AveragePoo (None, 1, 1, 512)    0           activation_100[0][0]             
 __________________________________________________________________________________________________
-dense_1 (Dense)                 (None, 10)           5130        flatten_1[0][0]                  
+flatten_5 (Flatten)             (None, 512)          0           average_pooling2d_5[0][0]        
+__________________________________________________________________________________________________
+dense_5 (Dense)                 (None, 10)           5130        flatten_5[0][0]                  
 ==================================================================================================
-Total params: 11,192,458
-Trainable params: 11,184,650
+Total params: 12,627,082
+Trainable params: 12,619,274
 Non-trainable params: 7,808
 __________________________________________________________________________________________________
+```
+
+## Model Logs
+
+```
+Epoch 1/50
+390/390 [==============================] - 98s 252ms/step - loss: 2.9545 - acc: 0.3032 - val_loss: 2.2674 - val_acc: 0.3431
+
+Epoch 00001: val_acc improved from -inf to 0.34310, saving model to /content/CIFAR_10_Resnet20_weights.h5
+Epoch 2/50
+390/390 [==============================] - 88s 226ms/step - loss: 1.8727 - acc: 0.4744 - val_loss: 2.0945 - val_acc: 0.4256
+
+Epoch 00002: val_acc improved from 0.34310 to 0.42560, saving model to /content/CIFAR_10_Resnet20_weights.h5
+Epoch 3/50
+390/390 [==============================] - 88s 226ms/step - loss: 1.6021 - acc: 0.5562 - val_loss: 2.7243 - val_acc: 0.3359
+
+Epoch 00003: val_acc did not improve from 0.42560
+Epoch 4/50
+390/390 [==============================] - 88s 226ms/step - loss: 1.4424 - acc: 0.6061 - val_loss: 1.7632 - val_acc: 0.5195
+
+Epoch 00004: val_acc improved from 0.42560 to 0.51950, saving model to /content/CIFAR_10_Resnet20_weights.h5
+Epoch 5/50
+390/390 [==============================] - 88s 226ms/step - loss: 1.3397 - acc: 0.6431 - val_loss: 1.9122 - val_acc: 0.4999
+
+Epoch 00005: val_acc did not improve from 0.51950
+Epoch 6/50
+390/390 [==============================] - 88s 226ms/step - loss: 1.2471 - acc: 0.6787 - val_loss: 2.0459 - val_acc: 0.4646
+
+Epoch 00006: val_acc did not improve from 0.51950
+Epoch 7/50
+390/390 [==============================] - 88s 225ms/step - loss: 1.1830 - acc: 0.7011 - val_loss: 1.7065 - val_acc: 0.5624
+
+Epoch 00007: val_acc improved from 0.51950 to 0.56240, saving model to /content/CIFAR_10_Resnet20_weights.h5
+Epoch 8/50
+390/390 [==============================] - 88s 226ms/step - loss: 1.1260 - acc: 0.7153 - val_loss: 1.7536 - val_acc: 0.5736
+
+Epoch 00008: val_acc improved from 0.56240 to 0.57360, saving model to /content/CIFAR_10_Resnet20_weights.h5
+Epoch 9/50
+390/390 [==============================] - 88s 225ms/step - loss: 1.0850 - acc: 0.7298 - val_loss: 1.4211 - val_acc: 0.6155
+
+Epoch 00009: val_acc improved from 0.57360 to 0.61550, saving model to /content/CIFAR_10_Resnet20_weights.h5
+Epoch 10/50
+390/390 [==============================] - 88s 225ms/step - loss: 1.0432 - acc: 0.7432 - val_loss: 1.5850 - val_acc: 0.6172
+
+Epoch 00010: val_acc improved from 0.61550 to 0.61720, saving model to /content/CIFAR_10_Resnet20_weights.h5
+Epoch 11/50
+390/390 [==============================] - 88s 225ms/step - loss: 1.0057 - acc: 0.7532 - val_loss: 1.1001 - val_acc: 0.7203
+
+Epoch 00011: val_acc improved from 0.61720 to 0.72030, saving model to /content/CIFAR_10_Resnet20_weights.h5
+Epoch 12/50
+390/390 [==============================] - 88s 225ms/step - loss: 0.9745 - acc: 0.7601 - val_loss: 1.6438 - val_acc: 0.5877
+
+Epoch 00012: val_acc did not improve from 0.72030
+Epoch 13/50
+390/390 [==============================] - 88s 225ms/step - loss: 0.9597 - acc: 0.7677 - val_loss: 1.5831 - val_acc: 0.6118
+
+Epoch 00013: val_acc did not improve from 0.72030
+Epoch 14/50
+390/390 [==============================] - 88s 224ms/step - loss: 0.9381 - acc: 0.7733 - val_loss: 1.2969 - val_acc: 0.6754
+
+Epoch 00014: val_acc did not improve from 0.72030
+
+Epoch 00014: ReduceLROnPlateau reducing learning rate to 0.0009486833062967954.
+Epoch 15/50
+390/390 [==============================] - 88s 225ms/step - loss: 0.7628 - acc: 0.8249 - val_loss: 0.7137 - val_acc: 0.8362
+
+Epoch 00015: val_acc improved from 0.72030 to 0.83620, saving model to /content/CIFAR_10_Resnet20_weights.h5
+Epoch 16/50
+390/390 [==============================] - 87s 224ms/step - loss: 0.7108 - acc: 0.8339 - val_loss: 0.7510 - val_acc: 0.8189
+
+Epoch 00016: val_acc did not improve from 0.83620
+Epoch 17/50
+390/390 [==============================] - 87s 224ms/step - loss: 0.6843 - acc: 0.8393 - val_loss: 1.0666 - val_acc: 0.7410
+
+Epoch 00017: val_acc did not improve from 0.83620
+Epoch 18/50
+390/390 [==============================] - 87s 224ms/step - loss: 0.6605 - acc: 0.8450 - val_loss: 0.7524 - val_acc: 0.8210
+
+Epoch 00018: val_acc did not improve from 0.83620
+
+Epoch 00018: ReduceLROnPlateau reducing learning rate to 0.0003000000007813074.
+Epoch 19/50
+390/390 [==============================] - 88s 225ms/step - loss: 0.5945 - acc: 0.8642 - val_loss: 0.5752 - val_acc: 0.8727
+
+Epoch 00019: val_acc improved from 0.83620 to 0.87270, saving model to /content/CIFAR_10_Resnet20_weights.h5
+Epoch 20/50
+390/390 [==============================] - 88s 226ms/step - loss: 0.5596 - acc: 0.8746 - val_loss: 0.5889 - val_acc: 0.8708
+
+Epoch 00020: val_acc did not improve from 0.87270
+Epoch 21/50
+390/390 [==============================] - 88s 225ms/step - loss: 0.5451 - acc: 0.8769 - val_loss: 0.5761 - val_acc: 0.8686
+
+Epoch 00021: val_acc did not improve from 0.87270
+Epoch 22/50
+390/390 [==============================] - 88s 226ms/step - loss: 0.5384 - acc: 0.8782 - val_loss: 0.5429 - val_acc: 0.8794
+
+Epoch 00022: val_acc improved from 0.87270 to 0.87940, saving model to /content/CIFAR_10_Resnet20_weights.h5
+Epoch 23/50
+390/390 [==============================] - 88s 225ms/step - loss: 0.5215 - acc: 0.8819 - val_loss: 0.5645 - val_acc: 0.8703
+
+Epoch 00023: val_acc did not improve from 0.87940
+Epoch 24/50
+390/390 [==============================] - 88s 225ms/step - loss: 0.5164 - acc: 0.8839 - val_loss: 0.5418 - val_acc: 0.8794
+
+Epoch 00024: val_acc did not improve from 0.87940
+Epoch 25/50
+390/390 [==============================] - 87s 224ms/step - loss: 0.5053 - acc: 0.8853 - val_loss: 0.5702 - val_acc: 0.8728
+
+Epoch 00025: val_acc did not improve from 0.87940
+Epoch 26/50
+390/390 [==============================] - 87s 224ms/step - loss: 0.4959 - acc: 0.8866 - val_loss: 0.5425 - val_acc: 0.8785
+
+Epoch 00026: val_acc did not improve from 0.87940
+Epoch 27/50
+390/390 [==============================] - 87s 224ms/step - loss: 0.4836 - acc: 0.8919 - val_loss: 0.5822 - val_acc: 0.8693
+
+Epoch 00027: val_acc did not improve from 0.87940
+
+Epoch 00027: ReduceLROnPlateau reducing learning rate to 0.0001.
+Epoch 28/50
+390/390 [==============================] - 87s 224ms/step - loss: 0.4627 - acc: 0.8978 - val_loss: 0.4891 - val_acc: 0.8958
+
+Epoch 00028: val_acc improved from 0.87940 to 0.89580, saving model to /content/CIFAR_10_Resnet20_weights.h5
+Epoch 29/50
+390/390 [==============================] - 87s 224ms/step - loss: 0.4464 - acc: 0.9024 - val_loss: 0.5071 - val_acc: 0.8910
+
+Epoch 00029: val_acc did not improve from 0.89580
+Epoch 30/50
+390/390 [==============================] - 87s 224ms/step - loss: 0.4445 - acc: 0.9035 - val_loss: 0.5012 - val_acc: 0.8912
+
+Epoch 00030: val_acc did not improve from 0.89580
+Epoch 31/50
+390/390 [==============================] - 87s 224ms/step - loss: 0.4363 - acc: 0.9060 - val_loss: 0.4832 - val_acc: 0.8980
+
+Epoch 00031: val_acc improved from 0.89580 to 0.89800, saving model to /content/CIFAR_10_Resnet20_weights.h5
+Epoch 32/50
+390/390 [==============================] - 87s 224ms/step - loss: 0.4311 - acc: 0.9088 - val_loss: 0.4841 - val_acc: 0.8961
+
+Epoch 00032: val_acc did not improve from 0.89800
+Epoch 33/50
+390/390 [==============================] - 87s 224ms/step - loss: 0.4308 - acc: 0.9079 - val_loss: 0.4902 - val_acc: 0.8936
+
+Epoch 00033: val_acc did not improve from 0.89800
+Epoch 34/50
+390/390 [==============================] - 87s 224ms/step - loss: 0.4281 - acc: 0.9081 - val_loss: 0.4758 - val_acc: 0.8969
+
+Epoch 00034: val_acc did not improve from 0.89800
+Epoch 35/50
+390/390 [==============================] - 87s 224ms/step - loss: 0.4219 - acc: 0.9099 - val_loss: 0.4868 - val_acc: 0.8999
+
+Epoch 00035: val_acc improved from 0.89800 to 0.89990, saving model to /content/CIFAR_10_Resnet20_weights.h5
+Epoch 36/50
+390/390 [==============================] - 87s 224ms/step - loss: 0.4186 - acc: 0.9100 - val_loss: 0.4807 - val_acc: 0.8997
+
+Epoch 00036: val_acc did not improve from 0.89990
+Epoch 37/50
+390/390 [==============================] - 87s 224ms/step - loss: 0.4142 - acc: 0.9119 - val_loss: 0.4750 - val_acc: 0.8987
+
+Epoch 00037: val_acc did not improve from 0.89990
+Epoch 38/50
+390/390 [==============================] - 87s 224ms/step - loss: 0.4121 - acc: 0.9120 - val_loss: 0.4872 - val_acc: 0.8964
+
+Epoch 00038: val_acc did not improve from 0.89990
+Epoch 39/50
+390/390 [==============================] - 87s 224ms/step - loss: 0.4020 - acc: 0.9151 - val_loss: 0.4753 - val_acc: 0.8988
+
+Epoch 00039: val_acc did not improve from 0.89990
+Epoch 40/50
+390/390 [==============================] - 87s 224ms/step - loss: 0.4037 - acc: 0.9142 - val_loss: 0.4822 - val_acc: 0.8956
+
+Epoch 00040: val_acc did not improve from 0.89990
+Epoch 41/50
+390/390 [==============================] - 87s 223ms/step - loss: 0.3979 - acc: 0.9171 - val_loss: 0.4724 - val_acc: 0.9010
+
+Epoch 00041: val_acc improved from 0.89990 to 0.90100, saving model to /content/CIFAR_10_Resnet20_weights.h5
+Epoch 42/50
+390/390 [==============================] - 87s 223ms/step - loss: 0.3982 - acc: 0.9152 - val_loss: 0.4683 - val_acc: 0.8980
+
+Epoch 00042: val_acc did not improve from 0.90100
+Epoch 43/50
+390/390 [==============================] - 87s 223ms/step - loss: 0.3915 - acc: 0.9177 - val_loss: 0.4571 - val_acc: 0.9046
+
+Epoch 00043: val_acc improved from 0.90100 to 0.90460, saving model to /content/CIFAR_10_Resnet20_weights.h5
+Epoch 44/50
+390/390 [==============================] - 87s 223ms/step - loss: 0.3879 - acc: 0.9199 - val_loss: 0.4613 - val_acc: 0.9024
+
+Epoch 00044: val_acc did not improve from 0.90460
+Epoch 45/50
+390/390 [==============================] - 87s 224ms/step - loss: 0.3856 - acc: 0.9197 - val_loss: 0.4597 - val_acc: 0.9013
+
+Epoch 00045: val_acc did not improve from 0.90460
+Epoch 46/50
+390/390 [==============================] - 87s 224ms/step - loss: 0.3821 - acc: 0.9200 - val_loss: 0.4558 - val_acc: 0.9047
+
+Epoch 00046: val_acc improved from 0.90460 to 0.90470, saving model to /content/CIFAR_10_Resnet20_weights.h5
+Epoch 47/50
+390/390 [==============================] - 88s 225ms/step - loss: 0.3800 - acc: 0.9211 - val_loss: 0.4866 - val_acc: 0.8967
+
+Epoch 00047: val_acc did not improve from 0.90470
+Epoch 48/50
+390/390 [==============================] - 87s 224ms/step - loss: 0.3788 - acc: 0.9219 - val_loss: 0.4561 - val_acc: 0.9046
+
+Epoch 00048: val_acc did not improve from 0.90470
+Epoch 49/50
+390/390 [==============================] - 87s 224ms/step - loss: 0.3716 - acc: 0.9231 - val_loss: 0.4787 - val_acc: 0.8990
+
+Epoch 00049: val_acc did not improve from 0.90470
+Epoch 50/50
+390/390 [==============================] - 87s 224ms/step - loss: 0.3686 - acc: 0.9254 - val_loss: 0.4572 - val_acc: 0.9045
+
+Epoch 00050: val_acc did not improve from 0.90470
+Model took 4423.17 seconds to train
 ```
