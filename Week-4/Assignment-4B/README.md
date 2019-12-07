@@ -33,7 +33,7 @@ Using the same structure mentioed [here](https://keras.io/examples/cifar10_resne
 Training Accuracy   ~ 92.54%
 Test Accuracy       ~ 90.47%
 
-With this approach achieved **accuracy 89.58%** in **29** epoch.
+With this approach achieved **accuracy 89.58%** in **28** epoch.
 Below is the Model-3 Summary and logs.
 
 
