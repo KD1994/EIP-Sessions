@@ -1,8 +1,41 @@
-## EIP-4 Week-4
+## EIP-4 ~~> Week-4 ~~> Assignment-4B 
 
-## Training Accuracy ~ 92.54%
+## Model-1 Approach:
+Using the 8n+2 Formula to create ResNet-18 by using given Example model [here](https://keras.io/examples/cifar10_resnet/)
 
-## Test Accuracy 	   ~ 90.47%
+1) Conv Layer with 64 output filters and and **7x7** kernel size 
+2) **without maxpooling** as the image is of size 32x32.
+
+Training Accuracy   ~ 91.64%
+Test Accuracy       ~ 88.48%
+
+Can't Use GradCam as the Last Convolution output shape is 2x2x512, so need better version.
+
+## Model-2 Approach:
+Using the same structure mentioed [here](https://keras.io/examples/cifar10_resnet/) with just a change in filter size
+
+1) Conv Layer with 64 output filters and and **3x3** kernel size
+2) **without maxpooling** as the image is of size 32x32.
+
+Training Accuracy   ~ 93.22%
+Test Accuracy       ~ 90.16%
+
+Can't Use GradCam as the Last Convolution output shape is 4x4x512, so need better version.
+
+## Model-3 Approach:
+
+Using the same structure mentioed [here](https://keras.io/examples/cifar10_resnet/) with below mentioend changes
+
+1) Conv Layer with 64 output filters and and **3x3** kernel size
+2) **without maxpooling** as the image is of size 32x32.
+3) Last Block with strides=1, which helps in maintaining the output shape as **8x8x512**
+
+Training Accuracy   ~ 92.54%
+Test Accuracy       ~ 90.47%
+
+With this approach achieved **accuracy 89.58%** in **29** epoch.
+Below is the Model-3 Summary and logs.
+
 
 ## Model Summary
 ```
