@@ -1,5 +1,7 @@
 ## EIP-4 Week-5
 
+Results achieved by executing for only 50 epochs with custom model.
+
 ## Training Accuracy
 
 ```
@@ -45,6 +47,35 @@
  'weight_output_acc': 0.9662326388888889,
  'weight_output_loss': 0.11660327727182043
 }
+```
+
+## Model Compilation
+
+```
+losses = {"gender_output": "binary_crossentropy", 
+    "image_quality_output": "categorical_crossentropy", 
+    "age_output": "categorical_crossentropy",
+    "weight_output": "categorical_crossentropy",
+    "bag_output": "categorical_crossentropy",
+    "footwear_output": "categorical_crossentropy",
+    "pose_output": "categorical_crossentropy",
+    "emotion_output": "categorical_crossentropy"
+    }
+    
+loss_weights = {
+          "gender_output": 0.1, "image_quality_output": 1.0, "age_output": 1.0, 
+          "weight_output": 0.3, "bag_output": 0.3, 
+          "footwear_output": 0.3, "pose_output": 0.3, 
+          "emotion_output": 0.4}
+
+opt=Adam(lr=0.001, beta_1=0.95, beta_2=0.999, amsgrad=False)
+
+model.compile(
+    optimizer=opt,
+    loss=losses,
+    loss_weights=loss_weights, 
+    metrics=["accuracy"]
+)
 ```
 
 ## Model
@@ -494,4 +525,4 @@ Epoch 00050: val_loss did not improve from 0.20968
 
 ## Plots
 
-![Accuracy & Loss Plot](https://github.com/KD1994/EIP-Sessions/blob/master/Week-5/plot.png)
+![Accuracy & Loss Plot](plot.png)
